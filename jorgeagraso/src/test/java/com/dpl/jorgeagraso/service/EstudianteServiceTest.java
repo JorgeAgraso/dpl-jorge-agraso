@@ -41,7 +41,7 @@ public class EstudianteServiceTest {
         Estudiante guardado = service.guardarEstudiante(new Estudiante());
 
         assertNotNull(guardado);
-        assertEquals("Juan Paco", guardado.getNombre());
+        assertEquals("Juan Perez", guardado.getNombre());
         verify(repository, times(1)).save(any(Estudiante.class));
     }
 
